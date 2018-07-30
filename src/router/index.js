@@ -8,10 +8,16 @@ export default [{
     component: app,
     children: [
         {
-            path: '',
+            path: '/', //默认页面
+            redirect: {name: 'login'}
+        },
+        {
+            name: 'login',
+            path: 'login',
             component: login
         },
         {
+            name: 'home',
             path: 'home',
             component: home
         }

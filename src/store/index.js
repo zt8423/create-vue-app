@@ -7,7 +7,7 @@ import getters from './getters';
 Vue.use(Vuex);
 
 const state = {
-
+    userType: ''
 }
 
 export default new Vuex.Store({
