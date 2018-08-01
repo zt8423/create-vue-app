@@ -6,8 +6,8 @@
         import {mapState} from 'vuex';
 
         export default {
-            computed: mapState([
-                'userType'
-            ])
+            computed: {
+                ...mapState(['userType'])
+            }
         }
 </script>

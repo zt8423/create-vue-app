@@ -24,7 +24,7 @@ module.exports = merge(baseWebpackConfig, {
     plugins: [
         //设置全局的变量(webpack4.x不区分NODE_ENV)
         new webpack.DefinePlugin({
-            'run_env': JSON.stringify('prod')
+            'build_env': JSON.stringify('prod')
         }),
         new CleanWebpackPlugin('create-vue-app',{
             root: path.resolve(__dirname, '../')
